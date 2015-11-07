@@ -5,7 +5,7 @@ class StaticPagesControllerTest < ActionController::TestCase
   test "should get accueil" do
     get :accueil
     assert_response :success
-    assert_select "title", "Accueil | Intrepus Corp"
+    assert_select "title", "Intrepus Corp"
   end
 
   test "should get contact" do
