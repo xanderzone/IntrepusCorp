@@ -19,4 +19,10 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
     assert_select "title", "Services | Intrepus Corp"
   end
+
+  test "should get portfolio" do
+    get :portfolio
+    assert_response :success
+    assert_select "title", "Portfolio | Intrepus Corp"
+  end
 end
